@@ -1,0 +1,5 @@
+# Ignore swap files and pycs
+*.swo
+*.pyc
+*~
+
