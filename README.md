@@ -1,1 +1,1 @@
-# simple-django-app
+# infostore
