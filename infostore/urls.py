@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from . import views
-from infoapp.views import InfoCreateView
+from infoapp.views import InfoCreateView, InfoListView
 
 urlpatterns = [
   url(r'^admin/', admin.site.urls),
   url(r'^$', views.HomeView.as_view(), name='home'),
   url(r'^add/$', InfoCreateView.as_view(), name='create'),
+  url(r'^list/$', InfoListView.as_view(), name='list'),
 ]

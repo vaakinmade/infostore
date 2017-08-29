@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.core.urlresolvers import reverse
 
 class Info(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True)
@@ -7,4 +7,4 @@ class Info(models.Model):
 	email = models.CharField(max_length=50)
 
 	def get_absolute_url(self):
-   	    return reverse('list')
+   	    return reverse('create')
