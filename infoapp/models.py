@@ -19,4 +19,4 @@ class Info(models.Model):
 	email = models.EmailField(max_length=50)
 
 	def get_absolute_url(self):
-   	    return reverse('create')
+   	    return reverse('list')
